@@ -1,0 +1,28 @@
+Weatherman 3.5 alpha
+
+This is an editor for the weathermap program config files.  Currently, it only
+works well if you have MRTG as your monitoring tool, not Cacti.  It should
+work with mrtg-rrd or 14all but works best with routers2.
+
+To install:
+1. Install helper.cgi on your weathermap/MRTG server.
+2. Give your web service write permission to the weathermap configs directory,
+   and also to the icons and images directories, and read permission to the
+   MRTG .cfg files.  
+3. (Optional) add web server security to helper.cgi (username/password or IP
+   address restrictions).  If you do this you will need to edit the weatherman
+   script later.
+4. Edit the helper.cgi to define the various paths and file locations. 
+   CFGSUBDIRS should be blank if you do not use different subdirs from the
+   cfgpath for your .cfg files, else set it to '*'.
+5. Install Activeperl 5.8 or later on your workstation
+6. Install weatherman.pl on your workstation
+7. Edit weatherman.pl to give the URL of the helper.cgi script.  If you set a
+   uername.password in (3) then also specify it here.
+8. Run weatherman.pl and it should be able to find your helper script, so
+   try using it!
+
+Steve Shipway
+steve@steveshipway.org
+http://www.steveshipway.org/forum
+

@@ -1,0 +1,4 @@
+These files are for icons which change on node status change.
+
+xxx.png -- a null one to be displayed in the editor
+xxxs.png -- the icon to be displayed for status s (0,1,2,3)
